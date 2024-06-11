@@ -1,23 +1,21 @@
+import React from 'react'
+
 function CitySelector({ cities, selectedCity, onChangeCity }) {
-  function handleChange(event) {
-    onChangeCity(event.target.value);
+
+  const handleChange = (event) => {
+    console.log(event)
   }
 
   return (
-    <select
-      className="form-select"
-      onChange={handleChange}
-      value={selectedCity}
-    >
+    <select className='form-select' onChange={handleChange} value={selectedCity}>
       {cities.map((city) => (
-        <option key={city}>{city}</option>
+        <option key={city}>
+          {city}
+        </option>
       ))}
+
     </select>
-  );
+  )
 }
 
-CitySelector.defaultProps = {
-  onChangeCity: () => {},
-};
-
-export default CitySelector;
+export default CitySelector
