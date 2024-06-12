@@ -1,12 +1,9 @@
-import CitySelector from "./components/CitySelector";
-import DateSelector from "./components/DateSelector";
-import Pluviometer from "./components/Pluviometer";
-import cities from './data/cities.json'
+import Pluviometer from './components/Pluviometer'
 
 function App() {
   return (
     <div className="App">
-      <DateSelector selectedDate={'Today'}/>
+      <Pluviometer />
     </div>
   );
 }

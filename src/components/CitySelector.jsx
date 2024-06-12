@@ -3,7 +3,7 @@ import React from 'react'
 function CitySelector({ cities, selectedCity, onChangeCity }) {
 
   const handleChange = (event) => {
-    console.log(event.target.value)
+    onChangeCity(event.target.value)
   }
 
   return (
