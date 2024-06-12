@@ -5,7 +5,7 @@ function DateSelector({ selectedDate, onDateChange }) {
   const options = ['Today', '7 days', 'Month']
 
   return (
-    <div className='row border p-3'>
+    <div className='row border p-3 fixed-bottom'>
       {options.map(option => (
         <div 
           onClick={() => onDateChange(option)}
